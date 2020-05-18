@@ -2,12 +2,6 @@
 provision an AKS cluster with a private IP address as inference cluster
 # Create an AKS compute target with a Private IP address
 
-![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/201-machine-learning-private-ip/PublicLastTestDate.svg)
-![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/201-machine-learning-private-ip/PublicDeployment.svg)
-
-![Azure US Gov Last Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/201-machine-learning-private-ip/FairfaxLastTestDate.svg)
-![Azure US Gov Last Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/201-machine-learning-private-ip/FairfaxDeployment.svg)
-
 ![Best Practice Check](https://azurequickstartsservice.blob.core.windows.net/badges/201-machine-learning-private-ip/BestPracticeResult.svg)
 ![Cred Scan Check](https://azurequickstartsservice.blob.core.windows.net/badges/201-machine-learning-private-ip/CredScanResult.svg)
 
