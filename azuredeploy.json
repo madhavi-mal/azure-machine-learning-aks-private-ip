@@ -16,6 +16,17 @@
         "description": "Specifies the name of the Azure Machine Learning service workspace."
       }
     },
+    "aml-sku":{
+      "type": "string",
+      "defaultValue": "basic",
+        "allowedValues": [
+          "basic",
+          "enterprise"
+        ],
+        "metadata": {
+          "description": "Specifies the sku, also referred as 'edition' of the Azure Machine Learning workspace."
+        }
+    }
     "location": {
       "type": "string",
       "allowedValues": [
@@ -133,6 +144,10 @@
         "apiVersion": "2019-11-01",
         "name": "[parameters('workspaceName')]",
         "location": "[parameters('location')]",
+        "sku": {
+         "tier": "[parameters('aml-sku')]",
+          "name": "[parameters('aml-sku')]"
+        },
         "dependsOn": [
           "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
           "[resourceId('Microsoft.KeyVault/vaults', variables('keyVaultName'))]",
