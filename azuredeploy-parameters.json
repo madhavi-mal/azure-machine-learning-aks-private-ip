@@ -4,6 +4,9 @@
   "parameters": {
     "location": {
       "value": "westus"
+    },
+    "aksclusterName": {
+      "value": "<aks-cluster-name>"
     }
   }
 }
