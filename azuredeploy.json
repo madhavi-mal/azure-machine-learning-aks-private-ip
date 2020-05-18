@@ -9,6 +9,13 @@
         "description": "Specifies the name of the Azure Machine Learning service workspace."
       }
     },
+    "aksclusterName": {
+      "type": "string",
+      "defaultValue": "[concat('aksclusterName', uniqueString(resourceGroup().id))]",
+      "metadata": {
+        "description": "Specifies the name of the Azure Machine Learning service workspace."
+      }
+    },
     "location": {
       "type": "string",
       "allowedValues": [
@@ -146,7 +153,7 @@
       {
           "type": "Microsoft.MachineLearningServices/workspaces/computes",
           "apiVersion": "2018-11-19",
-          "name": "[concat(parameters('workspaceName'),'/compute-with-ilb')]",
+          "name": "[concat(parameters('workspaceName'),'/',parameters('aksclusterName'))]",
           "location": "[parameters('location')]",
           "dependsOn": [
           "[resourceId('Microsoft.MachineLearningServices/workspaces', parameters('workspaceName'))]"
