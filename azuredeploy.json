@@ -26,7 +26,7 @@
         "metadata": {
           "description": "Specifies the sku, also referred as 'edition' of the Azure Machine Learning workspace."
         }
-    }
+    },
     "location": {
       "type": "string",
       "allowedValues": [
